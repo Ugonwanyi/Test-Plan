@@ -1,0 +1,1278 @@
+,,,,SIGN UP PAGE,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Pre-condition,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+A,The URL is active and visited,Total Test Cases,52,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+B,Signup button is active and allows data entry,Passed,50,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+C,Stable network connection is available,Failed,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,Not Executed,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,% Passed,96,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,% Failed,4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,% Not Executed,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,DEVICE,,,,BROWSER,,,,,,,,,,,,,,,,,,,,
+Test Case ID,Test Case,Pre-condition,Test Execution Steps,Test Data,Expected Result,Severity,Actual Result,IPHONE Xs Max,Windows 10 Pro,Chrome,,Firefox,,Internet Explorer,,"Comment 
+(or Requirement xref)",Created & Executed By,Executed By,Date of Execution,,,,,,,,,,,,,
+USER STORY - EMAIL/PHONE NUMBER SIGN UP,,,,,,,Status,Status,Status,Status - mobile,Status - PC,Status - mobile,Status - PC,Status - mobile,Status - PC,,,,,,,,,,,,,,,,,
+J-SP 01,Verify Sign up page loads correctly,A ,1. Visit www.jumia.com.ng,Not Applicable,Page should load correctly,Critical,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,Sign up page loads correctly,,,,,,,,,,,,,,,,
+J-SP 02,Verify that the input field allows data entry,"A, B, C","
+1. Visit the website URL
+2. Click on the Account tab to navigate to the Sign up page",Not Applicable,The field should be enabled to allow users to enter data.,Critical,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,Input field allows data entry,Ugonwanyi Okechukwu,Ugonwanyi Okechukwu,15/11/2024,,,,,,,,,,,,,
+J-SP 03,Verify that the input field allows for both alphabetic and numeric data entry,"A, B, C","
+1. Visit the website URL
+2. Click on the Account tab to navigate to the Sign up page",Not Applicable,The field should be enabled to allow users to enter both alphabetic and numeric data in the same text box,Critical,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,Input field allows for both alphabetic and numeric data entry,Ugonwanyi Okechukwu,Ugonwanyi Okechukwu,15/11/2024,,,,,,,,,,,,,
+J-SP 04,Verify that the text input field is labelled with proper placeholders,"A, B, C","
+1. Visit the website URL
+2. Click on the Account tab to navigate to the Sign up page",Not Applicable,The text field is named accurately and has the placeholder 'Email or Mobile Number",Critical,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,Input field is labelled with proper placeholders,Ugonwanyi Okechukwu,Ugonwanyi Okechukwu,15/11/2024,,,,,,,,,,,,,
+J-SP 05,Verify that the Signup page prevents submission if mandatory field is left empty.,"A, B, C","
+1. Visit the website URL
+2. Click on the Account tab to navigate to the Sign up page",Not Applicable,The application should prompt the user with the error message 'Either the email or phone number entered is not valid" and does not allow the registration to continue,Critical,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,Signup page prevents submission,Ugonwanyi Okechukwu,Ugonwanyi Okechukwu,15/11/2024,,,,,,,,,,,,,
+J-SP 06,Verify that the application allows sign up registration with a valid email address,"A, B, C","
+1. Visit the website URL
+2. Click on the Account tab to navigate to the Sign up page
+3. Enter a valid email address in the text input field
+4. Click on the Continue button",Email: jumtest59@gmail.com,The application should navigate the user to a new page and activate the password input field to accept data entry,Critical,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,Application allows sign up registration with a valid email address,Ugonwanyi Okechukwu,Ugonwanyi Okechukwu,15/11/2024,,,,,,,,,,,,,
+J-SP 07,Verify that new user is navigated to new page to provide password when valid email address input is successful,"A, B, C","
+1. Visit the website URL
+2. Click on the Account tab to navigate to the Sign up page
+3. Enter a valid email address in the text input field
+4. Click on the Continue button",jumtest59@gmail.com,"A.)The application should navigate the user to a new page to continue the registration.  
+B.) The password input field becomes activted and appears below the email/phone number text field.
+C) The Login button becomes activated and should appear under the password input field",Critical,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,New user is navigated to new page ,Ugonwanyi Okechukwu,Ugonwanyi Okechukwu,15/11/2024,,,,,,,,,,,,,
+J-SP 08,Verify that the application allows sign up registration with a valid phone number,"A, B, C","
+1. Visit the website URL
+2. Click on the Account tab to navigate to the Sign up page
+3. Enter a valid phone number in the text input field
+4. Click on the Continue button",080 231 2345 6789,A.)The application navigates user to a new page to continue registration. Password input field and Login button become activated,Critical,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,Application allows sign up registration with a valid phone number,Ugonwanyi Okechukwu,Ugonwanyi Okechukwu,15/11/2024,,,,,,,,,,,,,
+J-SP 09,Verify if email input field is case insensitive,"A, B, C","
+1. Visit the website URL
+2. Click on the Account tab to navigate to the Sign up page
+3. Enter an email in the text input field
+4. Click on the Continue button",JUMTEST59@GMAIL.COM,Application should reject the input with the error message "Type a valid phone number to continue",Critical,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,Email input field is case insensitive,,,,,,,,,,,,,,,,
+J-SP 10,Verify if application rejects email submission without both the @ symbol and domain name,"A, B, C","
+1. Visit the website URL
+2. Click on the Account tab to navigate to the Sign up page
+3. Enter alphabetic data without the @symbol and domain name
+4. Click on the Continue button",laura,Submission should be accepted and reformatted,Critical,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,Application rejects email submission ,Ugonwanyi Okechukwu,Ugonwanyi Okechukwu,15/11/2024,,,,,,,,,,,,,
+J-SP 11,Verify if application rejects email submission with the @ symbol while leaving out the domain name,"A, B, C","
+1. Visit the website URL
+2. Click on the Account tab to navigate to the Sign up page
+3. Enter an email with the @symbol and leave out the domain name
+4. Click on the Continue button",laura@,The application rejects the submission with the error message " Either the email or phone number is not valid",Critical,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,Verify if application rejects email submission ,Ugonwanyi Okechukwu,Ugonwanyi Okechukwu,15/11/2024,,,,,,,,,,,,,
+J-SP 12,Verify if application rejects email submission which excludes the local part but includes the @ symbol and a domain name,"A, B, C","
+1. Visit the website URL
+2. Click on the Account tab to navigate to the Sign up page
+3. Enter an email leaving out the local part while but including the @symbol and domain name
+4. Click on the Continue button",@gmail.com,The application rejects the submission with the error message " Either the email or phone number is not valid",Critical,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,Application rejects email submission ,Ugonwanyi Okechukwu,Ugonwanyi Okechukwu,15/11/2024,,,,,,,,,,,,,
+J-SP 13,Verify if application rejects email submission with incomplete domain name ,"A, B, C","
+1. Visit the website URL
+2. Click on the Account tab to navigate to the Sign up page
+3. Enter an email including the @symbol and incomplete domain name (alternate leaving out the first part of the domain name and .com)
+4. Click on the Continue button","Email 1: laura@gmail
+Email 2: laura@.com
+Email 3: laura@gmail.co",The application rejects both submissions with the error message " The email is not valid. Insert a valid email to continue",Critical,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,Application rejects email submission with incomplete domain name ,Ugonwanyi Okechukwu,Ugonwanyi Okechukwu,15/11/2024,,,,,,,,,,,,,
+J-SP 14,Verify application correctly identifies and handles email addresses with multiple "@" symbols,"A, B, C","
+1. Visit the website URL
+2. Click on the Account tab to navigate to the Sign up page
+3. Enter an email with multiple @symbols
+4. Click on the Continue button","Email 1: laura@@gmail.com
+Email 2: laura@gmail@gmail.com",The application rejects all submissions with the error message " The email is not valid. Insert a valid email to continue",Critical,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,Application rejects email addresses with multiple "@" symbols,Ugonwanyi Okechukwu,Ugonwanyi Okechukwu,15/11/2024,,,,,,,,,,,,,
+J-SP 15,"Verify how the application handles excessively long email addresses, ensuring it enforces a 64 character limit for the local part and displays an error message if exceeded.","A, B, C","
+1. Visit the website URL
+2. Click on the Account tab to navigate to the Sign up page
+3. Enter an email that is excessively long 
+4. Click on the Continue button",abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvw@gmail.com,The submissions should be rejected with the error message " The email is not valid. Insert a valid email to continue",Critical,FAIL,FAIL,FAIL,FAIL,FAIL,FAIL,FAIL,FAIL,FAIL,Application does not enforce a reasonable character limit or display an error message if exceeded.,Ugonwanyi Okechukwu,Ugonwanyi Okechukwu,15/11/2024,,,,,,,,,,,,,
+J-SP 16,"Verify if application rejects email submissions with invalid characters and consecutive dots (e.g., #domain.com, @domain..com).","A, B, C","
+1. Visit the website URL
+2. Click on the Account tab to navigate to the Sign up page
+3. Enter an email with special characters before the @symbols
+4. Enter an email with multiple dots in the domain name
+4. Click on the Continue button",,The submissions should be rejected with the error message " The email is not valid. Insert a valid email to continue",Critical,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,Application rejects email submission ,Ugonwanyi Okechukwu,Ugonwanyi Okechukwu,15/11/2024,,,,,,,,,,,,,
+J-SP 17,"Verify if application rejects email submissions with an incorrect top-level domain name (e.g., user@domain.co).","A, B, C","
+1. Visit the website URL
+2. Click on the Account tab to navigate to the Sign up page
+3. Enter an email with incorrect top-level domain name
+4. Click on the Continue button","ugo@gmail.co
+ugo@gmai.com
+ugo@yahoo.co
+ugo@outlook.co
+ugo@gmil.com
+ugo@yaho.com
+ugo@oulook.com",The submissions should be rejected with the error message " The email is not valid. Insert a valid email to continue",Critical,FAIL,FAIL,FAIL,FAIL,FAIL,FAIL,FAIL,FAIL,FAIL,Application accepts email submissions with an incorrect top-level domain name ,Ugonwanyi Okechukwu,Ugonwanyi Okechukwu,15/11/2024,,,,,,,,,,,,,
+J-SP 18,Confirm that proper error messages are displayed for invalid email submissions.,"A, B, C","
+1. Visit the website URL
+2. Click on the Account tab to navigate to the Sign up page
+3. Enter an invalid email 
+","ugo@gmail.co
+ugo@gmai.com
+ugo@yahoo.co
+ugo@outlook.co
+ugo@gmil.com
+ugo@yaho.com
+ugo@oulook.com",The should display specific error messages highlighting the nature of the error,Critical,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,Error messages are displayed for invalid email submissions.,Ugonwanyi Okechukwu,Ugonwanyi Okechukwu,15/11/2024,,,,,,,,,,,,,
+J-SP 19,Verify application accepts email addresses with alphanumeric characters,"A, B, C","
+1. Visit the website URL
+2. Click on the Account tab to navigate to the Sign up page
+3. Enter an email with numeric characters before the @symbol
+4. Click on the Continue button",test123@gmail.com,The inputted email should be accepted,Critical,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,Alphanumeric characters areaccepted,Ugonwanyi Okechukwu,Ugonwanyi Okechukwu,15/11/2024,,,,,,,,,,,,,
+J-SP 20,Verify that the system accepts only numeric input as mobile number ,"A, B, C","
+1. Visit the website URL
+2. Click on the Account tab to navigate to the Sign up page
+3. Enter alphabetic input in the text box
+4. Click on the Continue button",080 3854 4500,The application should accept only numeric input as phone number,Critical,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,Only numeric input is accepted,Ugonwanyi Okechukwu,Ugonwanyi Okechukwu,15/11/2024,,,,,,,,,,,,,
+J-SP 21,Verify that the system does not accept alphabetic and special characters as mobile number ,"A, B, C","
+1. Visit the website URL
+2. Click on the Account tab to navigate to the Sign up page
+3. Enter numeric and alphabetic input in the text box
+4. Click on the Continue button","080 38#4 45a0
+a80 3844 4500
+080 #844 4500 ",Only numeric input should be accepted,Critical,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,System does not accept alphabets and special characters as mobile number ,Ugonwanyi Okechukwu,Ugonwanyi Okechukwu,15/11/2024,,,,,,,,,,,,,
+J-SP 22,Verify if system rejects local mobile number less than 11 digits,"A, B, C","
+1. Visit the website URL
+2. Click on the Account tab to navigate to the Sign up page
+3. Enter a local phone number that is less than 11 digits
+4. Click on the Continue button",080 3854 450,Application should reject the input with the error message "Type a valid phone number to continue",Critical,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,System rejects local mobile number less than 11 digits,Ugonwanyi Okechukwu,Ugonwanyi Okechukwu,15/11/2024,,,,,,,,,,,,,
+J-SP 23,Verify that the system correctly processes valid international phone numbers according to specified location and international length format,"A, B, C","
+1. Visit the website URL
+2. Click on the Account tab to navigate to the Sign up page
+3. Enter a valid phone number 
+4. Select a country from the populated drop down list
+5. Verify that the selected country has the right country code",Not Applicable,Mobile numbers should be correctly paired according to  location and country format,Critical,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,Phone numbers are specified according to location and international length format,Ugonwanyi Okechukwu,Ugonwanyi Okechukwu,15/11/2024,,,,,,,,,,,,,
+J-SP 24,Verify that input field includes a drop down list of countries and their international dialling codes.,"A, B, C","
+1. Visit the website URL
+2. Click on the Account tab to navigate to the Sign up page
+3. Enter a valid phone number 
+4. Click on the populated drop down list
+5. Select a country and verify that it has the right code",Not Applicable,Input field should have populated list of countries and their international dialling codes,Critical,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,Input field includes a drop down list of countries and their international dialling codes.,Ugonwanyi Okechukwu,Ugonwanyi Okechukwu,15/11/2024,,,,,,,,,,,,,
+J-SP 25,Verify application automatically populates country code directory and user is able to make a selection.,"A, B, C","
+1. Visit the website URL
+2. Click on the Account tab to navigate to the Sign up page
+3. Enter a valid phone number 
+4. Click on the populated drop down list
+5. Select a country",Not Applicable,When a number is inputted in the text field the drop down list of international phone country codes should automatically populate and become active,Critical,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,Application automatically populates country code directory and user is able to make a selection.,Ugonwanyi Okechukwu,Ugonwanyi Okechukwu,15/11/2024,,,,,,,,,,,,,
+J-SP 26,Verify country code list is in alphabetical order for easier viewing and selection,"A, B, C","
+1. Visit the website URL
+2. Click on the Account tab to navigate to the Sign up page
+3. Enter a valid phone number 
+4. Click on the populated drop down list
+5. Scan through the populated list from top to bottom",Not Applicable,The populated countries should be organised alphabetically with their international dialling codes  ,Critical,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,Country code list is arranged in alphabetical order for easier viewing and selection,Ugonwanyi Okechukwu,Ugonwanyi Okechukwu,15/11/2024,,,,,,,,,,,,,
+J-SP 27,Verify that when a number is inputted the text field immediately populates the country code list,"A, B, C","
+1. Visit the website URL
+2. Click on the Account tab to navigate to the Sign up page
+3. Enter a valid phone number 
+4. Click on the valid country code for the inputted phone number",123,Country code list should be populated once numeric input is entered into the text box,Critical,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,Text field immediately populates the country code list,Ugonwanyi Okechukwu,Ugonwanyi Okechukwu,15/11/2024,,,,,,,,,,,,,
+J-SP 28,verify that when a number is inputted the field immediately populates to accept only phone numbers,"A, B, C","
+1. Visit the website URL
+2. Click on the Account tab to navigate to the Sign up page
+3. Enter data into the text field starting with numeric characters then followed by alphabetic characters ",123,When numeric data is entered the text field .....,Critical,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,Text field immediately populates to accept only phone numbers,Ugonwanyi Okechukwu,Ugonwanyi Okechukwu,15/11/2024,,,,,,,,,,,,,
+J-SP 29,Verify the country code selected displays in the field as expected.,"A, B, C","
+1. Visit the website URL
+2. Click on the Account tab to navigate to the Sign up page
+3. Enter a valid phone number 
+4. Select a country code for the inputted phone number",Not Applicable,When a country code is selected it should immediately be populated and retained in the input field,Critical,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,Country code selected displays,Ugonwanyi Okechukwu,Ugonwanyi Okechukwu,15/11/2024,,,,,,,,,,,,,
+J-SP 30,Verify that the system does not accept a valid country code with an invalid phone number,"A, B, C","
+1. Visit the website URL
+2. Click on the Account tab to navigate to the Sign up page
+3. Enter a valid phone number 
+4. Select an invalid country code for the inputted phone number",Select different country codes with both valid and invalid phone numbers,Application should reject the input with the error message "Type a valid phone number to continue",Critical,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,Only valid country code and phone number is accepted,Ugonwanyi Okechukwu,Ugonwanyi Okechukwu,15/11/2024,,,,,,,,,,,,,
+J-SP 31,Verify application can handle data that's pasted into the input field correctly.,"A, B, C","
+1. Visit the website URL
+2. Click on the Account tab to navigate to the Sign up page
+3. Paste a valid phone number into the text field
+4. Click Continue
+",080 3854 4500,Data pasted into the text field should be accepted and retained,Critical,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,Verify application can handle data that's pasted into the input field correctly.,Ugonwanyi Okechukwu,Ugonwanyi Okechukwu,15/11/2024,,,,,,,,,,,,,
+USER STORY - CAPTCHA / OTP / EMAIL VERIFICATION,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+J-SP 32,Verify user is automatically directed to Captcha or Email Verification page from the sign up page,"A, B, C","
+1. Visit the website URL
+2. Click on the Account tab to navigate to the Sign up page
+3. Enter a valid email or phone number 
+4. Click the Continue button
+",080 3854 4500 or laura@gmail,The application redirects the user to a Captcha page,Critical,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,User is automatically directed to Captcha or Email Verification page from the sign up page,Ugonwanyi Okechukwu,Ugonwanyi Okechukwu,15/11/2024,,,,,,,,,,,,,
+J-SP 33,"Verify that when user is directed to CAPTCHA page they are not able to continue registration without clicking on CAPTCHA verification box
+","A, B, C","
+1. Visit the website URL
+2. Click on the Account tab to navigate to the Sign up page
+3. Enter a valid email or phone number
+4. Click Continue
+5. Tick the Captcha verification box to continue registration
+
+",Not Applicable,User should not be able to continue with the registration without ticking the Captcha box,Critical,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,"User not able to continue registration without clicking on CAPTCHA verification box
+",Ugonwanyi Okechukwu,Ugonwanyi Okechukwu,15/11/2024,,,,,,,,,,,,,
+J-SP 34,"Verify that user is able to continue registration and is directed to Email verification page after ticking the CAPTCHA verification box
+","A, B, C","
+1. Visit the website URL
+2. Click on the Account tab to navigate to the Sign up page
+3. Enter a valid email or phone number
+4. Click Continue
+5. On the Captcha page attempt continuing the registration without ticking the Captcha verification box
+
+",Not Applicable,User should automatically be directed to Email Verification page after ticking the Captcha box,Critical,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,"User is able to continue registration and is directed to Email verification page
+",Ugonwanyi Okechukwu,Ugonwanyi Okechukwu,15/11/2024,,,,,,,,,,,,,
+J-SP 35,Verify that user receives an OTP when valid email is inputted,"A, B, C","
+1. Visit the website URL
+2. Click on the Account tab to navigate to the Sign up page
+3. Enter a valid email or phone number
+4. Click Continue
+5. Confirm receipt of OTP in the email address provided
+",Not Applicable,User should receive an email containing an OTP in the email address that was provided ,Critical,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,OTP is received,Ugonwanyi Okechukwu,Ugonwanyi Okechukwu,15/11/2024,,,,,,,,,,,,,
+J-SP 36,Verify new user is redirected to password input page after valid OTP is inputted successfully,"A, B, C","
+1. Visit the website URL
+2. Click on the Account tab to navigate to the Sign up page
+3. Enter a valid email or phone number
+4. Click Continue
+5. Confirm receipt of OTP in the email address provided
+6. Navigate to the Email Verification page and input valid OTP into the provided text box ",OTP to be gotten from email,Password input page should open up and become active,Critical,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,New user is redirected ,Ugonwanyi Okechukwu,Ugonwanyi Okechukwu,,,,,,,,,,,,,,
+J-SP 37,Verify application's response when trying to sign up with a phone number or email address that's already registered.,"A, B, C","
+1. Visit the website URL
+2. Click on the Account tab to navigate to the Sign up page
+3. Enter a email or phone number that's already registered
+4. Click Continue
+5. Confirm receipt of OTP in the email address provided
+6. Navigate to the Email Verification page and input valid OTP into the provided text box ",OTP to be gotten from email,Application should recognize registered user or validate authenticity of user by asking for OTP input to conduct security verification,Critical,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,Application remebers registered users,Ugonwanyi Okechukwu,Ugonwanyi Okechukwu,,,,,,,,,,,,,,
+J-SP 38,Verify login using a valid OTP,"A, B, C","
+1. Visit the website URL
+2. Click on the Account tab to navigate to the Sign up page
+3. Enter a valid email or phone number
+4. Click Continue
+5. Confirm receipt of OTP in the email address provided
+6. Navigate to the Email Verification page and input valid OTP into the provided text box ",OTP to be gotten from email,Application should recognize valid OTP and display confrimation message,Critical,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,Valid OTP accepted,Ugonwanyi Okechukwu,Ugonwanyi Okechukwu,15/11/2024,,,,,,,,,,,,,
+J-SP 39,Verify login is rejected when using an invalid/expired OTP,"A, B, C","
+1. Visit the website URL
+2. Click on the Account tab to navigate to the Sign up page
+3. Enter a valid email or phone number
+4. Click Continue
+5. Confirm receipt of OTP in the email address provided
+6. Wait for the time provided for the OTP's expiration to elapse
+7. Navigate to the Email Verification page and input expired OTP into the provided text box ",Input invalid or expired OTP,Application should recognize invalid OTP and display error message,Critical,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,Login is rejected,Ugonwanyi Okechukwu,Ugonwanyi Okechukwu,,,,,,,,,,,,,,
+J-SP 40,Verify that registration confirmation emails are sent.,"A, B, C","
+1. Visit the website URL
+2. Click on the Account tab to navigate to the Sign up page
+3. Enter a valid email address
+4. Click Continue
+5. Confirm receipt of OTP in the email address provided
+",Not Applicable,Confirmation email should be received after successful registration,Critical,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,Confirmation emails are sent.,Ugonwanyi Okechukwu,Ugonwanyi Okechukwu,,,,,,,,,,,,,,
+J-SP 41,Verify the redirection to the homepage after successful registration.,"A, B, C","
+1. Visit the website URL
+2. Click on the Account tab to navigate to the Sign up page
+3. Enter a valid email address
+4. Click Continue
+5. Confirm receipt of OTP in the email address provided
+6. Continue with registration 
+7. Click Login",Not Applicable,Welcome message should be displayed and user navigated to home page,Critical,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,User is redirected to the homepage after successful registration.,Ugonwanyi Okechukwu,Ugonwanyi Okechukwu,,,,,,,,,,,,,,
+USER STORY - PASSWORD,,,,,,,,,,,,,,,,,Ugonwanyi Okechukwu,Ugonwanyi Okechukwu,,,,,,,,,,,,,,
+J-SP 42,Verify effectiveness of Show Password button,"A,B,C","
+1. Visit the website URL
+2. Click on the Account tab to navigate to the Sign up page
+3. Enter a valid email address
+4. Click Continue
+5. Enter OTP received in the email address
+6. Enter Password
+7. Click Show password button",Not Applicable,When clicked inputted password should become visible,Critical,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,Show Password button works,Ugonwanyi Okechukwu,Ugonwanyi Okechukwu,,,,,,,,,,,,,,
+J-SP 43,Verify effectiveness of Hide Password button,"A,B,C","
+1. Visit the website URL
+2. Click on the Account tab to navigate to the Sign up page
+3. Enter a valid email address
+4. Click Continue
+5. Enter OTP received in the email address
+6. Enter Password
+7. Click Show password button",Not Applicable,When clicked password input should become hidden,Critical,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,Hide Password button works,Ugonwanyi Okechukwu,Ugonwanyi Okechukwu,,,,,,,,,,,,,,
+J-SP 44,Verify effectiveness of password strength indicator,"A,B,C","
+1. Visit the website URL
+2. Click on the Account tab to navigate to the Sign up page
+3. Enter a valid email address
+4. Click Continue
+5. Confirm receipt of OTP in the email address provided
+6. Continue to the password page and input multiple password variations","123456
+123456789
+test@juju123
+test#&123
+abcdefgh
+testabcdef",Password strength in indicated in green for strong and red for weak,Critical,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,Password strength indicator is active,Ugonwanyi Okechukwu,Ugonwanyi Okechukwu,,,,,,,,,,,,,,
+J-SP 45,Verify that application indicates if password and password confirmation fields match,"A,B,C","
+1. Visit the website URL
+2. Click on the Account tab to navigate to the Sign up page
+3. Enter a valid email address
+4. Click Continue
+5. Confirma receipt of OTP in the email address provided
+6. Continue to the password page and input valid password in the password and password confirmation fields
+","Valid - test@juju123
+Invalid - test@ju123",The application displays accurate error message if both fields don't match,Critical,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,Application indicates if password and password confirmation fields match,Ugonwanyi Okechukwu,Ugonwanyi Okechukwu,,,,,,,,,,,,,,
+J-SP 46,Confirm that the registration page does not display the entered password in plaintext,"A,B,C","
+1. Visit the website URL
+2. Click on the Account tab to navigate to the Sign up page
+3. Enter a valid email address
+4. Click Continue
+5. Confirm receipt of OTP in the email address provided
+6. Continue to the password page and input data into the password field
+",Not Applicable,Data in the password input field should be hidden ,Critical,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,Entered password not displayed in plaintext,Ugonwanyi Okechukwu,Ugonwanyi Okechukwu,,,,,,,,,,,,,,
+J-SP 47,Verify effectiveness of Forget Password button,"A,B,C","
+1. Visit the website URL
+2. Click on the Account tab to navigate to the Sign up page
+3. Enter a valid email address
+4. Click Forgot Password",Not Applicable,User should be directed to Request Password Reset page,Critical,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,Forget Password button effective,Ugonwanyi Okechukwu,Ugonwanyi Okechukwu,,,,,,,,,,,,,,
+J-SP 48,Verify effectiveness of Reset Password button,"A,B,C","
+1. Visit the website URL
+2. Click on the Account tab to navigate to the Sign up page
+3. Enter a valid email address
+4. Click Forgot Password
+5. After redirection, Click on Request Password Reset",Not Applicable,The user should be directed to another page to request a password reset,Critical,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,Reset Password button effective,Ugonwanyi Okechukwu,Ugonwanyi Okechukwu,,,,,,,,,,,,,,
+J-SP 49,Verify user is able to change password after request for Password reset,"A,B,C","
+1. Visit the website URL
+2. Click on the Account tab to navigate to the Sign up page
+3. Enter a valid email address
+4. Click Forgot Password
+5. After redirection, Click on Request Password Reset
+6. Enter OTP provided in email address
+7. At Reset Password page, input new password
+8. Click Change Password",Not Applicable,Password update should be successful,Critical,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,User is able to change password after request for Password reset,Ugonwanyi Okechukwu,Ugonwanyi Okechukwu,,,,,,,,,,,,,,
+J-SP 50,Verify if user can proceed to reset password using incorrect/expired OTP,"A,B,C","
+1. Visit the website URL
+2. Click on the Account tab to navigate to the Sign up page
+3. Enter a valid email address
+4. Click Forgot Password
+5. After redirection, Click on Request Password Reset
+6. Enter incorrect/expired OTP",Input invalid or expired OTP,OTP should be rejected with accurate error message and user prevented from proceeding further,Critical,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,User can not proceed to reset password using incorrect/expired OTP,Ugonwanyi Okechukwu,Ugonwanyi Okechukwu,,,,,,,,,,,,,,
+J-SP 51,Verify that the Terms & Condition link is active and redirects to the accurate page when clicked,"A,B,C","
+1. Visit the website URL
+2. Click on the Account tab to navigate to the Sign up page
+3.Navigate to and Click on the Terms and Conditions link at the bottom of the page",Not Applicable,Terms and conditions page opens in a new window when clicked,Critical,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,Terms & Condition link is active and redirects to the accurate page when clicked,Ugonwanyi Okechukwu,Ugonwanyi Okechukwu,,,,,,,,,,,,,,
+J-SP 52,"Verify that appropriate error messages are displayed for invalid inputs, & actions guiding users to correct their actions.","A, B, C","
+1. Visit the website URL
+2. Click on the Account tab to navigate to the Sign up page
+3. Enter an invalid email address and click Continue
+4.Enter an invalid phone number and click Continue
+5. Observe applications behaviour when invalid inputs and actions are carried out in various scenarios
+
+",Not Applicable,The application should display context-based error messages that match the specific error  committed,Critical,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,Appropriate error messages are displayed,Ugonwanyi Okechukwu,Ugonwanyi Okechukwu,15/11/2024,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
